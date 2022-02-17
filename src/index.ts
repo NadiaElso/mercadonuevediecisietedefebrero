@@ -1,4 +1,4 @@
-"Bienvenidos a Mercado 9");
+/*console.log("Bienvenidos a Mercado 9");
 let cargaDelosProductos:string[]=new Array(3);
  let precioDelosProductos:number[]=new Array(3);
  let stockDeProductos:number[]=new Array(3);
