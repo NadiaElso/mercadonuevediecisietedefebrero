@@ -1,11 +1,11 @@
-/*console.log("Bienvenidos a Mercado 9");
+console.log("Bienvenidos a Mercado 9");
 let cargaDelosProductos:string[]=new Array(3);
  let precioDelosProductos:number[]=new Array(3);
  let stockDeProductos:number[]=new Array(3);
 
-function cargarProductos( cargaDelosProductos[3],precioDelosProductos[3],stockDeProductos[3]
+function cargarProductos(cargaDelosProductos[3],precioDelosProductos[3],stockDeProductos[3]
 ) {
-  for (let i = 0; i < cargaDelosProductos.length; i++) {
+  for (let i = 0; i < cargaDelosProductos.length; i++) {        //probar con menor igual <= y sin la dimension
     cargaDelosProductos[i]=String(prompt("Ingreso de productos disponibles"));
   }
   for (let i = 0; i < precioDelosProductos.length; i++) {
@@ -14,22 +14,26 @@ function cargarProductos( cargaDelosProductos[3],precioDelosProductos[3],stockDe
     stockDeProductos[i]=Number(prompt("Ingreso de Stock de los productos disponibles"));
   }
  
-    console.log(`El primer producto ingresado disponibles es ${cargaDelosProductos[0]} su precio es${precioDelosProductos[0]} y su stock es de${stockDeProductos[0]}`);
+   console.log(`El primer prod ucto ingresado disponibles es ${cargaDelosProductos[0]} su precio es${precioDelosProductos[0]} y su stock es de${stockDeProductos[0]}`);
   
     console.log(`El segundo producto ingresado disponibles es ${cargaDelosProductos[1]} su precio es${precioDelosProductos[1]} y su stock es de${stockDeProductos[1]}`); 
   
     console.log(`El tercer producto ingresado disponibles es ${cargaDelosProductos[2]} su precio es${precioDelosProductos[2]} y su stock es de${stockDeProductos[2]}`); 
- 
+    let aComprar= Number(prompt("Cuantos desea comprar"));
+    while (aComprar <= 0) {
+      aComprar = Number(
+        prompt(
+          "Ingrese la cantidad de productos que va a comprar que sea mayor a 0"
+        )
+      );
 
 
- let aComprar= Number(prompt("Cuantos desea comprar"));
-while (aComprar <= 0) {
-  aComprar = Number(
-    prompt(
-      "Ingrese la cantidad de productos que va a comprar que sea mayor a 0"
-    )
-  );
+
 }
+
+
+  
+
 function comprarProductos(aComprar: number) {
 cargarProductos(cargaDelosProductos[3],precioDelosProductos[3],stockDeProductos[3]);
 
